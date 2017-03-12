@@ -3,7 +3,7 @@ This is an example of how to extend the query options for OData v4 for Web API u
 
 Specifically this is an implementation of the OData query option $count, which returns the number of results (after applying $filter but before applying $top/$skip) and is necessary for pagination, Kendo grids, etc.. and only available if your controllers are derived from the ODataController class. 
 
-If you don't want to switch to ODataController (like say, you don't want the responses of all your services in production to change), this could be useful. 
+If you don't want to switch to ODataController (like say, all your controllers are derived from the same base controller and you don't want the responses of all your services in production to change), this could be useful. 
 The relevant code is in /common/ODataHelper.cs
 
 
